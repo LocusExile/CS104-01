@@ -1,0 +1,20 @@
+# List called names
+names = []
+
+# Input - for loop
+for _ in range(10):
+    accepted_name = input("Enter a name: ")
+    names.append(accepted_name)
+
+# Print the list
+print("Queue at the bank:", names)
+
+# Use a second for loop to dequeue (pop) each name and print it
+print("Dequeuing names:")
+for _ in range(len(names)):
+    dequeued_name = names.pop(0)
+    print(dequeued_name)
+
+# Print list
+print("Queue after dequeuing:", names)
+
